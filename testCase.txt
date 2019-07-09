@@ -1,0 +1,60 @@
+isStartNumberSmallEqualEndNumber:
+given
+	startNumber 2 and endNumber 1
+when
+	executing isStartNumberSmallEqualEndNumber function
+then
+	return false
+given
+	startNumber 1 and endNumber 2
+when
+	executing isStartNumberSmallEqualEndNumber function
+then
+	return true
+given
+	startNumber 2 and endNumber 2
+when
+	executing isStartNumberSmallEqualEndNumber function
+then
+	return true
+	
+	
+	
+	
+isInRange1to1000:
+given
+	startNumber 0 and endNumber 1
+when
+	executing isInRange1to1000 function
+then
+	return false
+given
+	startNumber 1 and endNumber 1001
+when
+	executing isInRange1to1000 function
+then
+	return false
+given
+	startNumber 0 and endNumber 1001
+when
+	executing isInRange1to1000 function
+then
+	return false
+given
+	startNumber 2 and endNumber 4
+when
+	executing isInRange1to1000 function
+then
+	return true
+	
+	
+
+createMultipyEquation:
+given
+	multiplier1 2 and multiplier2 4
+when
+	executing createMultipyEquation function
+then
+	return String like '2 * 4 = 8'
+
+
